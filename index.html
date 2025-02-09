@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Soulmate ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💘 Find Your Perfect Match 💘</h1>
+        <p>Let's find someone who truly understands you! Answer a few fun questions below. 😊</p>
+        
+        <form id="form1">
+            <h2>Step 1: Tell us about yourself</h2>
+
+            <label>First Name:</label>
+            <input type="text" id="mName">
+
+            <label>Last Name:</label>
+            <input type="text" id="mLastName">
+
+            <label>Gender:</label>
+            <select id="mGender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Age:</label>
+            <input type="number" id="mAge">
+
+            <label>Eye Color:</label>
+            <select id="mEye">
+                <option value="0">Prefer not to respond</option>
+                <option value="1">Blue</option>
+                <option value="2">Green</option>
+                <option value="3">Brown</option>
+                <option value="4">Hazel</option>
+                <option value="5">Gray</option>
+            </select>
+
+            <label>Height (cm):</label>
+            <input type="number" id="mHeight">
+
+            <label>Weight (kg):</label>
+            <input type="number" id="mWeight">
+
+            <label>Skin Tone:</label>
+            <select id="mSkin">
+                <option value="0">Prefer not to respond</option>
+                <option value="1">Fair</option>
+                <option value="2">Tan</option>
+                <option value="3">Olive</option>
+                <option value="4">Brown</option>
+                <option value="5">Dark</option>
+            </select>
+
+            <label>How much of sense of humor will you have in a relationship?</label>
+            <select id="mHumor">
+                <option value="1">Nothing at all</option>
+                <option value="2">Not a lot</option>
+                <option value="3">Medium</option>
+                <option value="4">Sometimes, when needed</option>
+                <option value="5">Almost always</option>
+            </select>   
+            <label>How do you handle conflicts in a relationship?</label>
+            <select id="mConflict">
+                <option value="1">I avoid them at all costs</option>
+                <option value="2">I try to compromise and resolve things peacefully</option>
+                <option value="3">I stand my ground and debate my point</option>
+                <option value="4">I prefer to take time before discussing</option>
+                <option value="5">I believe there should not be any conflicts in a relationship</option>
+            </select>  
+            <label>What is your love language?</label>
+            <select id="mLang">
+                <option value="1">Words of affirmation (compliments, encouragements)</option>
+                <option value="2">Acts of service (helping out, doing things for them)</option>
+                <option value="3">Physical touch (hugs, holding hands)</option>
+                <option value="4">Quality time (spending meaningful time together)</option>
+                <option value="5">Giving gifts (thoughtful surprises)</option>
+            </select> 
+            <button type="submit">Next ➡️</button>
+        </form>
+
+        <form id="form2" style="display: none;">
+            <h2>Step 2: Your Ideal Match</h2>
+        
+            <label>Age:</label>
+            <input type="number" id="pAge">
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iAge" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+
+            <label>Preferred Eye Color:</label>
+            <select id="pEye">
+                <option value="0">No preference</option>
+                <option value="1">Blue</option>
+                <option value="2">Green</option>
+                <option value="3">Brown</option>
+                <option value="4">Hazel</option>
+                <option value="5">Gray</option>
+            </select>
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iEye" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+        
+            <label>Preferred Height (cm):</label>
+            <input type="number" placeholder="Optional" id="pHeight">  
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iHeight" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+        
+            <label>Preferred Weight (kg):</label>
+            <input type="number" placeholder="Optional" id="pWeight">  
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iWeight" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+        
+            <label>Preferred Skin Tone:</label>
+            <select id="pSkin">
+                <option value="0">No preference</option>
+                <option value="1">Fair</option>
+                <option value="2">Tan</option>
+                <option value="3">Olive</option>
+                <option value="4">Brown</option>
+                <option value="5">Dark</option>
+            </select>
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iSkin" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+        
+            <label>How important is a sense of humor in your ideal partner?</label>
+            <select id="pHumor">
+                <option value="1">Totally worthless</option>
+                <option value="2">Not a lot</option>
+                <option value="3">Medium</option>
+                <option value="4">It is a good thing</option>
+                <option value="5">Totally necessary</option>
+            </select>   
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iHumor" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+        
+            <label>How should your ideal partner handle conflicts in a relationship?</label>
+            <select id="pConflict">
+                <option value="1">They should avoid conflicts at all costs</option>
+                <option value="2">They should try to compromise and resolve things peacefully</option>
+                <option value="3">They should stand their ground and debate their point</option>
+                <option value="4">They should take time before discussing</option>
+                <option value="5">We should not face any conflicts in our relationship</option>
+            </select>  
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iConflict" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+        
+            <label>How should your ideal partner express love the most?</label>
+            <select id="pLang">
+                <option value="1">Through words of affirmation (compliments, encouragements)</option>
+                <option value="2">Through acts of service (helping out, doing things for them)</option>
+                <option value="3">Through physical touch (hugs, holding hands)</option>
+                <option value="4">Through quality time (spending meaningful time together)</option>
+                <option value="5">Through giving gifts (thoughtful surprises)</option>
+            </select>   
+            <label class="importance-label">How important is this trait to you? (1: is normal | 5: is a dealbreaker): 
+                <input id="iLang" class="importance-input" type="number" min="1" max="5" value="1">
+            </label>
+            <br>
+            <button type="submit">Find My Match! 💖</button>
+        </form>
+
+        <div id="matchTableContainer"></div>
+    </div>
+    <div class="modal-overlay"></div>
+    <div id="detailModal">
+        <div id="modalContent">
+        </div>
+        <button id="closeModal">Close Modal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
