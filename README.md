@@ -12,7 +12,7 @@ The system then **matches you with people** based on similarities and provides a
 ✅ **AI-Based Matchmaking** – Uses an intelligent system to calculate compatibility.  
 ✅ **Romantic & Visually Appealing UI** – Designed to match the **Valentine's Day** theme.  
 ✅ **Real Database for Future Expansion** – Starting with **fictional characters**, later expanding with **real user profiles**.  
-✅ **Interactive Results Visualization** – Generates a **JavaScript-powered graph** after submission.  
+✅ **Interactive Results Visualization** – Generates a **JavaScript-powered table** after submission.  
 ✅ **Engaging & Simple Form** – **Max 10 questions per form** to keep it fun & quick.  
 
 ---
@@ -33,7 +33,7 @@ Users enter details about themselves:
 - **Personality Traits** – Humor level, introvert/extrovert scale, interests  
 
 ### 2️⃣ Step 2: Ideal Partner Preferences  
-Users describe their **ideal soulmate**, answering similar questions as Step 1.  
+Users describe their **ideal soulmate**, answering questions similar to Step 1.  
 
 ### 3️⃣ Step 3: AI Matchmaking  
 The AI compares the **user's preferences** with the **ideal partner's traits** and vice versa and provides a **compatibility percentage**.  
