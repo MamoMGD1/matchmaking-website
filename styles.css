@@ -104,7 +104,7 @@ td {
     display: none;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -75%);
     width: 50%;
     min-width: 400px;
     background-color: white;
